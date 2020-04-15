@@ -1,0 +1,25 @@
+header
+{
+    background-color: #723737;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+header a
+{
+    background-color: #C4C4C4;
+    padding: 20px;
+    text-transform: uppercase;
+}
+
+#triangle
+{
+    width: 0; 
+    height: 0; 
+
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #C4C4C4;
+}

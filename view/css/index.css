@@ -1,0 +1,34 @@
+html
+{
+    height: 100%;
+}
+
+body
+{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#index_center
+{
+    font-family: 'Ruda', sans-serif;
+    text-align: center;
+}
+
+#index_center span
+{
+    color: #CA3D3D;
+}
+
+#index_center h1
+{
+    text-shadow: 10px 10px 4px rgba(0, 0, 0, 0.5);
+    font-size: 150px;
+}
+
+#index_center p
+{
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    font-size: 50px;
+}
