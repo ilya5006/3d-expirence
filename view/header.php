@@ -1,5 +1,6 @@
 <header>
     <div>
+        <a href="/">Главная страница</a>
         <a href="">Каталог</a>
     </div>
     
@@ -11,8 +12,8 @@
         </div>
     <?php else: ?>
         <div id="login_signup">
-            <a href="">Log in</a>
-            <a href="">Sign up</a>
+            <a href="./login.php">Log in</a>
+            <a href="./signup.php">Sign up</a>
         </div>
     <?php endif; ?>
 </header>

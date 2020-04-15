@@ -1,7 +1,9 @@
 header
 {
     background-color: #723737;
+
     padding: 40px;
+    
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -22,4 +24,19 @@ header a
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
     border-top: 20px solid #C4C4C4;
+}
+
+@media screen and (max-width: 610px)
+{
+    header
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header div
+    {
+        display: flex;
+        flex-direction: column;
+    }
 }
