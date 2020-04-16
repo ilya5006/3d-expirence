@@ -1,7 +1,7 @@
 <header>
     <div>
         <a href="/">Главная страница</a>
-        <a href="">Каталог</a>
+        <a href="/categories.php">Каталог</a>
     </div>
     
     <?php if (isset($_SESSION['id_user'])): ?>
@@ -12,8 +12,8 @@
         </div>
     <?php else: ?>
         <div id="login_signup">
-            <a href="./login.php">Log in</a>
-            <a href="./signup.php">Sign up</a>
+            <a href="/login.php">Log in</a>
+            <a href="/signup.php">Sign up</a>
         </div>
     <?php endif; ?>
 </header>

@@ -6,25 +6,13 @@
 
     <link rel="stylesheet" href="./view/css/header.css">
     <link rel="stylesheet" href="./view/css/main.css">
-    
-    <link rel="stylesheet" href="./view/css/login.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Ruda:wght@400;500&display=swap" rel="stylesheet">
 
-    <title>Авторизация</title>
+    <title>Каталог</title>
 </head>
 <body>
     <?php require_once './view/header.php'?>
     
-    <form action="" method="GET">
-        <p>Авторизация</p>
-
-        <input type="text" placeholder="Логин" id="login" required>
-        <input type="password" placeholder="Пароль" id="password" required>
-
-        <a href="">Забыли пароль?</a>
-
-        <button>Войти</button>
-    </form>
 </body>
 </html>
