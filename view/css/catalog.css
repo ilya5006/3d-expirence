@@ -11,6 +11,7 @@
     transition: 0.3s all;
 
     padding: 10px;
+    z-index: 50;
 }
 
 #sort_left_wrapper:hover
@@ -119,10 +120,17 @@ button
     
 }
 
+#main_content_wrapper
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #C4C4C4;
+}
+
 #figures
 {
-    background-color: #C4C4C4;
-    
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -141,17 +149,85 @@ button
     align-items: center;
 }
 
-.figure img
-{
-    width: 200px;
-    height: 200px;
-}
-
 .figure a
 {
     font-size: 30px;
-
+    display: block;
     font-family: 'Roboto', sans-serif;
+}
+
+.figure a:first-child
+{
+    position: relative;
+}
+
+.figure_image
+{
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+
+    left: 0px;
+    top: 0px;
+
+    transition: 0.5s;
+
+    background-image: url(../img/max.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    z-index: 4;
+}
+
+.figure_image_sepcs_wrapper
+{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    z-index: 10;
+}
+
+.figure_specs
+{
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+    color: #FFFFFF;
+
+    padding: 20px;
+    font-size: 15px;
+    transition: 0.5s;
+
+    background-color: rgba(0, 0, 0, 0);
+    
+    z-index: 5;
+}
+
+.figure_image_sepcs_wrapper p
+{
+    /* margin: 20px; */
+}
+
+.figure_image_sepcs_wrapper:hover .figure_image
+{
+    filter: blur(10px);
+}
+
+.figure_image_sepcs_wrapper:hover .figure_specs
+{
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+
 }
 
 .figure_rating
@@ -180,4 +256,40 @@ button
 .grey_rating_star
 {
     background-image: url(../img/star-grey.png);
+}
+
+#pagination
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#pagination button
+{
+    border: 0px;
+
+    font-size: 20px;
+
+    margin: 10px;
+    width: 40px;
+    height: 40px;
+
+    background-color: #ECECEC;
+}
+
+
+#pagination #current_page
+{
+    font-size: 50px;
+    height: 60px;
+    width: 60px;
+    /* padding: 40px; */
+}
+
+#pagination p
+{
+    margin: 20px;
+    font-size: 20px;
+    padding: 20px;
 }
