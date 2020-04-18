@@ -64,7 +64,12 @@ button
     margin-left: 20px;
 }
 
-#sort_arrow_buttons button:first-child, #view_buttons button:first-child
+#sort_arrow_buttons
+{
+    display: flex;
+}
+
+#sort_arrow_buttons button:first-child
 {
     margin-right: 5px;
 }
@@ -89,35 +94,14 @@ button
     height: 50px; 
 }
 
+.chosed
+{
+    border: 3px solid green;
+}
+
 #sort_bottom_arrow
 {
     transform: rotate(180deg);
-}
-
-.view_button
-{
-    background-color: #FFFFFF;
-    
-
-    width: 50px;
-    height: 50px; 
-
-}
-
-#grid
-{
-    background-image: url(../img/grid.png);
-
-    background-size: 40px;
-
-}
-
-#sandwitch
-{
-    background-image: url(../img/sandwitch.png);
-    
-    background-size: 40px;
-    
 }
 
 #main_content_wrapper
@@ -213,11 +197,6 @@ button
     z-index: 5;
 }
 
-.figure_image_sepcs_wrapper p
-{
-    /* margin: 20px; */
-}
-
 .figure_image_sepcs_wrapper:hover .figure_image
 {
     filter: blur(10px);
@@ -284,7 +263,6 @@ button
     font-size: 50px;
     height: 60px;
     width: 60px;
-    /* padding: 40px; */
 }
 
 #pagination p

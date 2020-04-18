@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./view/css/main.css">
 
     <link rel="stylesheet" href="./view/css/catalog.css">
+    <link rel="stylesheet" href="./view/css/catalog_grid.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Ruda:wght@400;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100&display=swap" rel="stylesheet">
@@ -60,13 +61,8 @@
             </p>
 
             <div id="sort_arrow_buttons">
-                <button class="arrows sort_top_buttons" id="sort_top_arrow"></button>
+                <button class="arrows sort_top_buttons chosed" id="sort_top_arrow"></button>
                 <button class="arrows sort_top_buttons" id="sort_bottom_arrow"></button>
-            </div>
-
-            <div id="view_buttons">
-                <button class="view_button sort_top_buttons" id="sandwitch"></button>
-                <button class="view_button sort_top_buttons" id="grid"></button>
             </div>
         </div>
 
