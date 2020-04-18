@@ -1,0 +1,183 @@
+#sort_left_wrapper
+{
+    position: absolute;
+    left: -190px;
+
+    width: 200px;
+    height: 100vh;
+
+    background-color: #FF6060;
+
+    transition: 0.3s all;
+
+    padding: 10px;
+}
+
+#sort_left_wrapper:hover
+{
+    left: 0px;
+}
+
+#search
+{
+    margin-bottom: 20px;
+}
+
+#sort_left
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#sort_top_wrapper
+{
+    background-color: #D9D9D9;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 70px;
+
+    padding-left: 15px;
+}
+
+button
+{
+    cursor: pointer;
+}
+
+#sort_type
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    font-size: 25px;
+}
+
+#sort_top_type
+{
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+#sort_arrow_buttons button:first-child, #view_buttons button:first-child
+{
+    margin-right: 5px;
+}
+
+.sort_top_buttons
+{
+    background-repeat: no-repeat;
+    background-position: center;
+
+    border: 0px;
+}
+
+.arrows
+{
+    background-image: url(../img/arrow-down.svg);
+    
+    background-color: #888888;
+    
+    background-size: 25px;
+    
+    width: 50px;
+    height: 50px; 
+}
+
+#sort_bottom_arrow
+{
+    transform: rotate(180deg);
+}
+
+.view_button
+{
+    background-color: #FFFFFF;
+    
+
+    width: 50px;
+    height: 50px; 
+
+}
+
+#grid
+{
+    background-image: url(../img/grid.png);
+
+    background-size: 40px;
+
+}
+
+#sandwitch
+{
+    background-image: url(../img/sandwitch.png);
+    
+    background-size: 40px;
+    
+}
+
+#figures
+{
+    background-color: #C4C4C4;
+    
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.figure
+{
+    background-color: #FFFFFF;
+    
+    margin: 15px;
+    padding: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.figure img
+{
+    width: 200px;
+    height: 200px;
+}
+
+.figure a
+{
+    font-size: 30px;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+.figure_rating
+{
+    display: flex;
+    flex-direction: row;
+
+    cursor: pointer;
+}
+
+.rating_star
+{
+    width: 30px;
+    height: 30px;
+    
+    background-size: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.gold_rating_star
+{
+    background-image: url(../img/star-gold.png);
+}
+
+.grey_rating_star
+{
+    background-image: url(../img/star-grey.png);
+}
