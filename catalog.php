@@ -6,6 +6,7 @@
 
     <link rel="stylesheet" href="./view/css/header.css">
     <link rel="stylesheet" href="./view/css/main.css">
+    <link rel="stylesheet" href="./view/css/pagination.css">
 
     <link rel="stylesheet" href="./view/css/catalog.css">
     <link rel="stylesheet" href="./view/css/catalog_grid.css">
@@ -71,7 +72,7 @@
     <div id="main_content_wrapper">
         <div id="figures">
             <div class="figure">
-                <a class="figure_image_sepcs_wrapper" href="">
+                <a href="/figure.php" class="figure_image_sepcs_wrapper">
                     <div class="figure_image"></div>
                 
                     <div class="figure_specs">
@@ -81,7 +82,7 @@
                     </div>
                 </a>
 
-                <a href="" class="figure_name">Имя фигурки</a>
+                <a href="/figure.php" class="figure_name">Имя фигурки</a>
 
                 <div class="figure_rating">
                     <div class="rating_star gold_rating_star"></div>

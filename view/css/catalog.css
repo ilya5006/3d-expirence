@@ -237,7 +237,7 @@ button
     background-image: url(../img/star-grey.png);
 }
 
-#pagination
+/* #pagination
 {
     display: flex;
     flex-direction: row;
@@ -257,7 +257,6 @@ button
     background-color: #ECECEC;
 }
 
-
 #pagination #current_page
 {
     font-size: 50px;
@@ -270,4 +269,4 @@ button
     margin: 20px;
     font-size: 20px;
     padding: 20px;
-}
+} */
