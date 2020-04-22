@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Апр 15 2020 г., 11:24
+-- Время создания: Апр 22 2020 г., 22:52
 -- Версия сервера: 8.0.15
 -- Версия PHP: 7.3.2
 
@@ -31,7 +31,7 @@ SET time_zone = "+00:00";
 CREATE TABLE `category` (
   `id_category` int(11) NOT NULL,
   `name` varchar(20) DEFAULT NULL,
-  `image` blob NOT NULL
+  `image` char(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -91,6 +91,16 @@ CREATE TABLE `role` (
   `role_name` varchar(20) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+--
+-- Дамп данных таблицы `role`
+--
+
+INSERT INTO `role` (`id_role`, `role_name`) VALUES
+(1, 'Администратор'),
+(2, 'Модератор'),
+(3, '3D-Мейкер'),
+(4, 'Пользователь');
+
 -- --------------------------------------------------------
 
 --
@@ -103,8 +113,16 @@ CREATE TABLE `user` (
   `login` varchar(50) DEFAULT NULL,
   `password` varchar(255) DEFAULT NULL,
   `date_of_birth` date DEFAULT NULL,
-  `address` varchar(255) DEFAULT NULL
+  `address` varchar(255) DEFAULT NULL,
+  `avatar` blob
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Дамп данных таблицы `user`
+--
+
+INSERT INTO `user` (`id_user`, `id_role`, `login`, `password`, `date_of_birth`, `address`, `avatar`) VALUES
+(1, 1, 'admin', '$2y$10$wQB0IiJsihrXZQY8uq7Z5uOFyZug9I0E4N83JYR9sUrCtUm5VbxYG', '2020-04-14', NULL, NULL);
 
 --
 -- Индексы сохранённых таблиц
@@ -177,13 +195,13 @@ ALTER TABLE `review`
 -- AUTO_INCREMENT для таблицы `role`
 --
 ALTER TABLE `role`
-  MODIFY `id_role` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_role` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT для таблицы `user`
 --
 ALTER TABLE `user`
-  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- Ограничения внешнего ключа сохраненных таблиц
