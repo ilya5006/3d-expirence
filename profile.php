@@ -16,8 +16,9 @@
     <link rel="stylesheet" href="./view/css/profile.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Ruda:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
     
-    <title>3D-expirence</title>
+    <title>Профиль пользователя</title>
 </head>
 <body>
     <?php require_once './view/header.php'; ?>
@@ -26,7 +27,13 @@
         <div id="user_info">
             <div id="user_avatar_role">
                 <input type="file" id="user_avatar" accept=".jpg, .png">
-                <p id="user_role">Администратор</p>
+                <p class="role_administrator" id="user_role">Администратор</p>
+
+                <!-- ROLE CLASSES: 
+                    - role_administrator
+                    - role_moderator
+                    - role_3d_maker
+                    - role_user -->
             </div>
 
             <div id="user_other_info">
@@ -44,7 +51,7 @@
                 <div id="user_edit_buttons">
                     <a href="/edit.php" id="edit_button">Редактировать</a>
                     <a href="/orders.php" id="orders_button">Заказы</a>
-                    <a href="/add_figure.php" id="orders_button">Добавить 3D-модель</a>
+                    <a href="/add-figure.php" id="orders_button">Добавить 3D-модель</a>
                 </div>
             <?php else: ?>
                 <div id="user_edit_buttons">
@@ -57,22 +64,40 @@
         <div id="user_favourite">
             <h2>Избранные работы</h2>
 
-            <div>
+            <div id="works">
                 <div class="user_work">
-                   <a href=""></a>
+                   <a href="" class="user_work_image"></a>
 
-                   <div id="user_rating">
+                   <a href="/figure.php" class="user_work_name">Имя фигурки</a>
+
+                   <div id="work_rating">
                         <div class="rating_star gold_rating_star"></div>
                         <div class="rating_star gold_rating_star"></div>
                         <div class="rating_star gold_rating_star"></div>
                         <div class="rating_star grey_rating_star"></div>
                         <div class="rating_star grey_rating_star"></div>
-                    </div> 
+                    </div>
+                </div>
+
+                <div class="user_work">
+                   <a href="" class="user_work_image"></a>
+
+                   <a href="/figure.php" class="user_work_name">Имя фигурки</a>
+
+                   <div id="work_rating">
+                        <div class="rating_star gold_rating_star"></div>
+                        <div class="rating_star gold_rating_star"></div>
+                        <div class="rating_star gold_rating_star"></div>
+                        <div class="rating_star grey_rating_star"></div>
+                        <div class="rating_star grey_rating_star"></div>
+                    </div>
                 </div>
             </div>
 
-            <a href="/all-works.php" id="user_all_works">Все работы</a>
         </div>
+
+        <a href="/all-works.php" id="user_all_works">Все работы</a>
+
     </div>
 </body>
 </html>

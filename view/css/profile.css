@@ -1,8 +1,27 @@
+.rating_star
+{
+    width: 30px;
+    height: 30px;
+    
+    background-size: 30px;
+    background-position: center;
+    background-repeat: no-repeat;    
+}
+
+.gold_rating_star
+{
+    background-image: url(../img/star-gold.png);
+}
+
+.grey_rating_star
+{
+    background-image: url(../img/star-grey.png);
+}
+
 #profile_wrapper
 {
     display: flex;
     flex-direction: column;
-
     padding: 15px;
 }
 
@@ -32,9 +51,47 @@
     cursor: pointer;
 }
 
+#user_role
+{
+    text-align: center;
+
+    margin-top: 5px;
+
+    font-size: 20px;
+
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.role_administrator
+{
+    color: red;
+}
+
+.role_moderator
+{
+    color: orange;
+}
+
+.role_3d_maker
+{
+    color: yellow;
+}
+
+.role_user
+{
+    color: green;
+}
+
 #user_other_info
 {
     margin-left: 20px;
+}
+
+#user_text_info
+{
+    font-size: 18px;
+
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 #user_edit_buttons
@@ -61,4 +118,74 @@
 {
     display: flex;
     flex-direction: column;
+
+    align-items: center;
+
+    background-color: #E5E5E5;
+
+    margin-top: 10px;
+
+    padding: 10px;
+}
+
+#user_favourite h2
+{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#works
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.user_work
+{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 5px 10px;
+}
+
+.user_work_image
+{
+    width: 150px;
+    height: 150px;
+
+    background-image: url(../img/max.png);
+    background-size: cover;
+
+    display: block;
+}
+
+.user_work_name
+{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+}
+
+#work_rating
+{
+    display: flex;
+    flex-direction: row;
+}
+
+#user_all_works
+{
+    font-family: 'Source Sans Pro', sans-serif;
+    text-transform: uppercase;
+    
+    font-size: 30px;
+
+    background-color: #E5E5E5;
+
+    margin: 0px auto;
+    margin-top: 15px;
+
+    padding: 20px 60px;
+    
 }
