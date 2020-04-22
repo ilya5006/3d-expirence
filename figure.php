@@ -101,7 +101,7 @@
             </div>
         </div>
         
-        <a id="all_reviews" href="/all_reviews.php">Все отзывы</a>
+        <a id="all_reviews" href="/all-reviews.php">Все отзывы</a>
     </div>
 </body>
 </html>

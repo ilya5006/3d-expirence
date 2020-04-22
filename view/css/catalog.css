@@ -236,37 +236,3 @@ button
 {
     background-image: url(../img/star-grey.png);
 }
-
-/* #pagination
-{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-#pagination button
-{
-    border: 0px;
-
-    font-size: 20px;
-
-    margin: 10px;
-    width: 40px;
-    height: 40px;
-
-    background-color: #ECECEC;
-}
-
-#pagination #current_page
-{
-    font-size: 50px;
-    height: 60px;
-    width: 60px;
-}
-
-#pagination p
-{
-    margin: 20px;
-    font-size: 20px;
-    padding: 20px;
-} */

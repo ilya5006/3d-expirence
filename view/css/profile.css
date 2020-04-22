@@ -1,0 +1,64 @@
+#profile_wrapper
+{
+    display: flex;
+    flex-direction: column;
+
+    padding: 15px;
+}
+
+#user_info
+{
+    display: flex;
+    flex-direction: row;
+}
+
+#user_avatar_role
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#user_avatar
+{
+    background-image: url(../img/max.png);
+    background-size: cover;
+
+    display: block;
+    
+    font-size: 0px;
+    width: 200px;
+    height: 200px;
+
+    cursor: pointer;
+}
+
+#user_other_info
+{
+    margin-left: 20px;
+}
+
+#user_edit_buttons
+{
+    margin-left: 20px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#user_edit_buttons a
+{
+    display: block;
+    text-align: center;
+    
+    background-color: #C4C4C4;
+    
+    font-size: 20px;
+    margin: 10px;
+    padding: 10px;
+}
+
+#user_favourite
+{
+    display: flex;
+    flex-direction: column;
+}
