@@ -4,18 +4,6 @@
     height: 30px;
     
     background-size: 30px;
-    background-position: center;
-    background-repeat: no-repeat;    
-}
-
-.gold_rating_star
-{
-    background-image: url(../img/star-gold.png);
-}
-
-.grey_rating_star
-{
-    background-image: url(../img/star-grey.png);
 }
 
 #profile_wrapper
@@ -168,7 +156,7 @@
     font-size: 20px;
 }
 
-#work_rating
+.work_rating
 {
     display: flex;
     flex-direction: row;

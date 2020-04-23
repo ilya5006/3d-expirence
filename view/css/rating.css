@@ -1,0 +1,17 @@
+.rating_star
+{
+    background-position: center;
+    background-repeat: no-repeat;
+
+    cursor: pointer;
+}
+
+.gold_rating_star
+{
+    background-image: url(../img/star-gold.png);
+}
+
+.gray_rating_star
+{
+    background-image: url(../img/star-gray.png);
+}

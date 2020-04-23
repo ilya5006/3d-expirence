@@ -6,11 +6,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+
+    <!-- STYLES -->
     <link rel="stylesheet" href="./view/css/main.css">
     <link rel="stylesheet" href="./view/css/header.css">
+    <link rel="stylesheet" href="./view/css/rating.css">
 
     <link rel="stylesheet" href="./view/css/figure.css">
 
+    <!-- FONTS -->
     <link href="https://fonts.googleapis.com/css2?family=Ruda:wght@400;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
 
@@ -57,8 +61,8 @@
                             <div class="rating_star gold_rating_star"></div>
                             <div class="rating_star gold_rating_star"></div>
                             <div class="rating_star gold_rating_star"></div>
-                            <div class="rating_star grey_rating_star"></div>
-                            <div class="rating_star grey_rating_star"></div>
+                            <div class="rating_star gray_rating_star"></div>
+                            <div class="rating_star gray_rating_star"></div>
                         </div>
                     </div>
                 </div>
@@ -75,8 +79,8 @@
                             <div class="rating_star gold_rating_star"></div>
                             <div class="rating_star gold_rating_star"></div>
                             <div class="rating_star gold_rating_star"></div>
-                            <div class="rating_star grey_rating_star"></div>
-                            <div class="rating_star grey_rating_star"></div>
+                            <div class="rating_star gray_rating_star"></div>
+                            <div class="rating_star gray_rating_star"></div>
                         </div>
                     </div>
                 </div>
@@ -93,8 +97,8 @@
                             <div class="rating_star gold_rating_star"></div>
                             <div class="rating_star gold_rating_star"></div>
                             <div class="rating_star gold_rating_star"></div>
-                            <div class="rating_star grey_rating_star"></div>
-                            <div class="rating_star grey_rating_star"></div>
+                            <div class="rating_star gray_rating_star"></div>
+                            <div class="rating_star gray_rating_star"></div>
                         </div>
                     </div>
                 </div>
