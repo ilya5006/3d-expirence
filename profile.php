@@ -1,5 +1,6 @@
 <?php
     SESSION_START();
+    
     $isAuth = isset($_SESSION['id_user']) ? true : false;
     $isSameUser = $_GET['id_user'] == $_SESSION['id_user'];
 ?>

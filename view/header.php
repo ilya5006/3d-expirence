@@ -6,9 +6,15 @@
     
     <?php if (isset($_SESSION['id_user'])): ?>
         <div id="profile_header">
-            <img src="" alt="Аватар">
+            <img src="/view/img/max.png" alt="Аватар">
             <p>username</p>
             <div id="triangle"></div>
+
+            <div class="dropdown-content">
+                <a href="#">Мой профиль</a>
+                <a href="#">Заказы</a>
+                <a href="#">Выйти</a>
+            </div>
         </div>
     <?php else: ?>
         <div id="login_signup">
