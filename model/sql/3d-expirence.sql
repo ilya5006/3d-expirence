@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Апр 22 2020 г., 22:52
+-- Время создания: Апр 24 2020 г., 02:45
 -- Версия сервера: 8.0.15
 -- Версия PHP: 7.3.2
 
@@ -112,7 +112,7 @@ CREATE TABLE `user` (
   `id_role` int(11) DEFAULT NULL,
   `login` varchar(50) DEFAULT NULL,
   `password` varchar(255) DEFAULT NULL,
-  `date_of_birth` date DEFAULT NULL,
+  `email` varchar(255) DEFAULT NULL,
   `address` varchar(255) DEFAULT NULL,
   `avatar` blob
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -121,8 +121,9 @@ CREATE TABLE `user` (
 -- Дамп данных таблицы `user`
 --
 
-INSERT INTO `user` (`id_user`, `id_role`, `login`, `password`, `date_of_birth`, `address`, `avatar`) VALUES
-(1, 1, 'admin', '$2y$10$wQB0IiJsihrXZQY8uq7Z5uOFyZug9I0E4N83JYR9sUrCtUm5VbxYG', '2020-04-14', NULL, NULL);
+INSERT INTO `user` (`id_user`, `id_role`, `login`, `password`, `email`, `address`, `avatar`) VALUES
+(1, 1, 'admin', '$2y$10$wQB0IiJsihrXZQY8uq7Z5uOFyZug9I0E4N83JYR9sUrCtUm5VbxYG', NULL, NULL, NULL),
+(2, 4, 'test', '$2y$10$1vkkutUIyAP8pC80mokh5e9yT72/ozUkQ1wgJ33B746tmc5n43vAC', 'test@test.test', NULL, NULL);
 
 --
 -- Индексы сохранённых таблиц
@@ -201,7 +202,7 @@ ALTER TABLE `role`
 -- AUTO_INCREMENT для таблицы `user`
 --
 ALTER TABLE `user`
-  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- Ограничения внешнего ключа сохраненных таблиц
