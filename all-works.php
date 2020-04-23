@@ -17,6 +17,10 @@
     <!-- FONTS -->
     <link href="https://fonts.googleapis.com/css2?family=Ruda:wght@400;500&display=swap" rel="stylesheet">
     
+    <!-- SCRIPTS -->
+    
+    <script src="/view/js/classes/Rating.js" defer></script>
+    <script src="/view/js/all-works.js" defer></script>
     <title>Все работы пользователя</title>
 </head>
 <body>
