@@ -28,7 +28,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
     
     <!-- SCRIPTS -->
-
+    <script src="/view/js/b64toBlob.js" defer></script>
+    <script src="/view/js/header.js" defer></script>
+    
     <title>Профиль пользователя</title>
 </head>
 <body>

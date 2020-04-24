@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="./view/css/categories.css">
     
     <link href="https://fonts.googleapis.com/css2?family=Ruda:wght@400;500&display=swap" rel="stylesheet">
+
+    <script src="/view/js/b64toBlob.js" defer></script>
+    <script src="/view/js/header.js" defer></script>
     
     <title>Категории</title>
 </head>

@@ -12,10 +12,12 @@
     <link rel="stylesheet" href="./view/css/rating.css">
 
     <link rel="stylesheet" href="./view/css/catalog.css">
-    <!-- <link rel="stylesheet" href="./view/css/catalog_grid.css"> -->
 
     <link href="https://fonts.googleapis.com/css2?family=Ruda:wght@400;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100&display=swap" rel="stylesheet">
+
+    <script src="/view/js/b64toBlob.js" defer></script>
+    <script src="/view/js/header.js" defer></script>
 
     <title>Каталог</title>
 </head>

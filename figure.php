@@ -21,6 +21,9 @@
     <!-- SCRIPTS -->
     <script src="/view/js/classes/Rating.js" defer></script>
     <script src="/view/js/figure.js" defer></script>
+    
+    <script src="/view/js/b64toBlob.js" defer></script>
+    <script src="/view/js/header.js" defer></script>
 
     <title>3D-модель</title>
 </head>

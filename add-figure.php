@@ -14,6 +14,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ruda:wght@400;500&display=swap" rel="stylesheet">
     
+    <script src="/view/js/b64toBlob.js" defer></script>
+    <script src="/view/js/header.js" defer></script>
+    
     <title>Добавление 3D-модели</title>
 </head>
 <body>
