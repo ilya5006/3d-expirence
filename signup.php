@@ -1,4 +1,12 @@
-<?php SESSION_START(); ?>
+<?php 
+
+SESSION_START();
+
+if (isset($_SESSION['id_user']))
+{
+    header("Location: /index.php");
+}
+?>
 
 <!DOCTYPE html>
 <html lang="ru">
@@ -8,11 +16,14 @@
 
     <link rel="stylesheet" href="./view/css/header.css">
     <link rel="stylesheet" href="./view/css/main.css">
+    <link rel="stylesheet" href="./view/css/messanger.css">
     
     <link rel="stylesheet" href="./view/css/signup.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Ruda:wght@400;500&display=swap" rel="stylesheet">
 
+    <script src="/view/js/classes/Messanger.js" defer></script>
+    <script src="/view/js/signup.js" defer></script>
     <title>Регистрация</title>
 </head>
 <body>
