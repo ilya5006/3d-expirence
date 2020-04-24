@@ -2,7 +2,12 @@
     SESSION_START();
     
     $isAuth = isset($_SESSION['id_user']) ? true : false;
-    $isSameUser = $_GET['id_user'] == $_SESSION['id_user'];
+    
+    $isSameUser = isset($_GET['id_user'])
+        ? $_GET['id_user'] == $_SESSION['id_user'] 
+            ? true
+            : false
+        : true;
 ?>
 
 <!DOCTYPE html>
@@ -55,7 +60,7 @@
 
             <?php if ($isSameUser): ?>
                 <div id="user_edit_buttons">
-                    <a href="/edit.php" id="edit_button">Редактировать</a>
+                    <a href="/profile-edit.php" id="edit_button">Редактировать</a>
                     <a href="/orders.php" id="orders_button">Заказы</a>
                     <a href="/add-figure.php" id="orders_button">Добавить 3D-модель</a>
                 </div>

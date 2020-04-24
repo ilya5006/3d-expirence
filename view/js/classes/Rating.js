@@ -21,7 +21,7 @@ class Rating
         {
             const clickedStar = event.target;
 
-            let starNumber = parseInt(clickedStar.dataset.starnumber);
+            const starNumber = parseInt(clickedStar.dataset.starnumber);
 
             for (let i = 1; i <= starNumber; i++)
             {
