@@ -106,7 +106,7 @@
 }
 
 
-#user_data_to_change form input[type="text"], #user_data_to_change form input[type="password"], #user_data_to_change form input[type="file"]
+#user_data_to_change form input[type="text"], #user_data_to_change form input[type="password"], #user_data_to_change form input[type="file"], #user_data_to_change form select
 {
     background-color: #E0FFE7;
     border: 0px;

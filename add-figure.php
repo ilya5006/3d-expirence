@@ -1,4 +1,10 @@
-<?php SESSION_START(); ?>
+<?php
+
+SESSION_START(); 
+
+if (empty($_SESSION['id_user'])) header("Location: /index.php");
+
+?>
 
 <!DOCTYPE html>
 <html lang="ru">
@@ -16,6 +22,8 @@
     
     <script src="/view/js/b64toBlob.js" defer></script>
     <script src="/view/js/header.js" defer></script>
+
+    <script src="/view/js/add-figure.js" defer></script>
     
     <title>Добавление 3D-модели</title>
 </head>
@@ -45,21 +53,26 @@
     </div>
 
     <div id="user_data_to_change">
-        <form action="" method="GET" id="figure_add">
+        <form action="/model/php/add-figure.php" method="POST" id="figure_add" enctype="multipart/form-data">
             <p>Наименование:</p>
-            <input type="text" name="figure_name" id="figure_name">
-            <p>Картинка:</p>
-            <input type="file" name="figure_image" id="figure_image">
-            <p>Файл с 3D-моделью:</p>
-            <input type="file" name="figure_file" id="figure_file">
-            <p>Пластик:</p>
-            <input type="text" name="figure_plastic" id="figure_plastic">
-            <p>Время печати:</p>
-            <input type="text" name="figure_print_time" id="figure_print_time">
-            <p>Заполнение:</p>
-            <input type="text" name="figure_filling_out" id="figure_filling_out">
+            <input type="text" name="figure_name" id="figure_name" required>
+            <p>Категория:</p>
+            <select name="figure_category" id="figure_category" required>
 
-            <input type="submit" name="figure_submit" id="figure_submit">
+            </select>
+            <!-- <input type="text" name="figure_category" id="figure_category" required> -->
+            <p>Картинка:</p>
+            <input type="file" name="figure_image" id="figure_image" accept=".jpeg, .jpg, .png" required>
+            <p>Файл с 3D-моделью:</p>
+            <input type="file" name="figure_file" id="figure_file" required>
+            <p>Пластик:</p>
+            <input type="text" name="figure_plastic" id="figure_plastic" required>
+            <p>Время печати:</p>
+            <input type="text" name="figure_print_time" id="figure_print_time" required>
+            <p>Заполнение:</p>
+            <input type="text" name="figure_filling_out" id="figure_filling_out" required>
+
+            <input type="submit" value="Добавить" name="figure_submit" id="figure_submit">
         </form>
     </div>
 </body>
