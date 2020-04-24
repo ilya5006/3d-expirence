@@ -5,8 +5,8 @@
     </div>
     
     <?php if (isset($_SESSION['id_user'])): ?>
-        <div id="profile_header">
-            <img src="/view/img/max.png" alt="Аватар">
+        <div id="profile_header" style="display: none;">
+            <img src="" alt="Аватар">
             <p>username</p>
             <div id="triangle"></div>
 
