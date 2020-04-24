@@ -11,7 +11,7 @@
             <div id="triangle"></div>
 
             <div class="dropdown-content">
-                <a href="#">Мой профиль</a>
+                <a href="/profile.php">Мой профиль</a>
                 <a href="#">Заказы</a>
                 <a href="#">Выйти</a>
             </div>

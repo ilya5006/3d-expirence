@@ -22,11 +22,7 @@
     <?php require_once './view/header.php'?>
     
     <div id="categories">
-        <!-- <a href="/catalog.php" style="background-image: url(https://www.myminifactory.com/uploads/tinymce-images/Props2.jpg)"></a>
-        <a href="" style="background-image: url(https://www.myminifactory.com/images/customizer/myminifactory-customizer.jpg)"></a>
-        <a href="" style="background-image: url(https://www.myminifactory.com/uploads/tinymce-images/fashioandaccessories.jpg)"></a>
-        <a href="" style="background-image: url(https://www.myminifactory.com/uploads/tinymce-images/Fan_Art.jpg)"></a>
-         -->
+        <!-- Dynamic update from JS -->
     </div>
 </body>
 </html>
