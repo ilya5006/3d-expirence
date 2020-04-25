@@ -22,6 +22,7 @@ if (empty($_SESSION['id_user'])) header("Location: /index.php");
     
     <script src="/view/js/b64toBlob.js" defer></script>
     <script src="/view/js/header.js" defer></script>
+    <script src="/view/js/profile.js" defer></script>
 
     <script src="/view/js/add-figure.js" defer></script>
     
@@ -58,9 +59,8 @@ if (empty($_SESSION['id_user'])) header("Location: /index.php");
             <input type="text" name="figure_name" id="figure_name" required>
             <p>Категория:</p>
             <select name="figure_category" id="figure_category" required>
-
+                <!-- Dynamic update -->
             </select>
-            <!-- <input type="text" name="figure_category" id="figure_category" required> -->
             <p>Картинка:</p>
             <input type="file" name="figure_image" id="figure_image" accept=".jpeg, .jpg, .png" required>
             <p>Файл с 3D-моделью:</p>
