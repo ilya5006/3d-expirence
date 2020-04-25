@@ -31,6 +31,8 @@
     <script src="/view/js/b64toBlob.js" defer></script>
     <script src="/view/js/header.js" defer></script>
     
+    <script src="/view/js/profile.js" defer></script>
+    
     <title>Профиль пользователя</title>
 </head>
 <body>
@@ -52,7 +54,6 @@
             <div id="user_other_info">
                 <div id="user_text_info">
                     <p id="user_name">Имя пользователя: <span>Admin</span></p>
-                    <p id="user_date_of_birth">Дата рождения: <span>13.05.1999</span></p>
 
                     <?php if ($isSameUser): ?>
                         <p id="user_address">Адрес: <span>г. Москва, пр. Мира, д. 44, кв. 52</span></p>                        

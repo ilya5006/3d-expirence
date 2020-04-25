@@ -16,6 +16,8 @@
     
     <script src="/view/js/b64toBlob.js" defer></script>
     <script src="/view/js/header.js" defer></script>
+
+    <script src="/view/js/profile.js" defer></script>
     
     <title>Добавление 3D-модели</title>
 </head>
@@ -37,7 +39,6 @@
         <div id="user_other_info">
             <div id="user_text_info">
                 <p id="user_name">Имя пользователя: <span>Admin</span></p>
-                <p id="user_date_of_birth">Дата рождения: <span>13.05.1999</span></p>
 
                 <p id="user_address">Адрес: <span>г. Москва, пр. Мира, д. 44, кв. 52</span></p>
             </div>
@@ -45,7 +46,7 @@
     </div>
 
     <div id="user_data_to_change">
-        <form action="" method="GET" id="user_address">
+        <form action="/model/php/update-address.php" method="GET" id="user_address">
             <p>Адрес:</p>
             <input type="text" name="address">
             <input type="submit" value="Обновить адрес" name="update_address" id="update_address">
