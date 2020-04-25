@@ -13,7 +13,7 @@
             <div class="dropdown-content">
                 <a href="/profile.php">Мой профиль</a>
                 <a href="#">Заказы</a>
-                <a href="#">Выйти</a>
+                <a href="/logout.php">Выйти</a>
             </div>
         </div>
     <?php else: ?>
