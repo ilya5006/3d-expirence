@@ -30,6 +30,7 @@
     <!-- SCRIPTS -->
     <script src="/view/js/b64toBlob.js" defer></script>
     <script src="/view/js/header.js" defer></script>
+    <script src="/view/js/user-info.js" defer></script>
     
     <script src="/view/js/profile.js" defer></script>
     
