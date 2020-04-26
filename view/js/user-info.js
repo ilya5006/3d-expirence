@@ -3,11 +3,11 @@ const userNameSpan = document.querySelector('#user_name span');
 const userAddressSpan = document.querySelector('#user_address span');
 const roleP = document.querySelector('#user_role');
 
-const idUser = parseInt(window.location.href.split('id_user=')[1]);
+const idUserUserInfo = parseInt(window.location.href.split('id_user=')[1]);
 
 let fetchURL = '/model/php/get-user-info.php';
 
-if (idUser) fetchURL += '?id_user=' + idUser;
+if (idUserUserInfo) fetchURL += '?id_user=' + idUserUserInfo;
 
 fetch(fetchURL)
 .then((res) =>
