@@ -23,11 +23,11 @@
     <!-- <script src="/view/js/classes/Rating.js" defer></script>
     <script src="/view/js/all-works.js" defer></script> -->
 
+    <script src="/view/js/classes/Rating.js" defer></script>
     <script src="/view/js/b64toBlob.js" defer></script>
     <script src="/view/js/header.js" defer></script>
-    
     <script src="/view/js/user-info.js" defer></script>
-    
+
     <script src="/view/js/all-works.js" defer></script>
 
     <title>Все работы пользователя</title>

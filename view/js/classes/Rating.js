@@ -1,6 +1,14 @@
 class Rating
 {
-    constructor(ratingWrapper, value = 5)
+    /**
+     * 
+     * Class to control rating stars ⭐⭐⭐⭐⭐
+     * @constructor
+     * @param {node} ratingWrapper - The DOM-element which contains the stars' div (⭐)
+     * @param {number} value - Default rating value
+     * @param {isChanging} bool - Is have to stars changes status on mouseover event
+     */
+    constructor(ratingWrapper, value = 5, isChanging = false)
     {
         this.ratingWrapper = ratingWrapper;
         this.stars = ratingWrapper.querySelectorAll('.rating_star');
@@ -12,9 +20,20 @@ class Rating
 
         this.setValue(value);
 
-        this.ratingWrapper.addEventListener('mouseover', this.updateStars.bind(this));
+        if (isChanging)
+        {
+            this.ratingWrapper.addEventListener('mouseover', this.updateStars.bind(this));
+            this.ratingWrapper.addEventListener('click', (event) => 
+            { 
+                this.setValue(event.target.dataset.starnumber);
+            });
+        }
     }
 
+    /**
+     * Setting value on click to star
+     * @param {number} value - Value of star [1; 5] 
+     */
     setValue(value)
     {
         for (let i = 1; i <= value; i++)
@@ -30,6 +49,10 @@ class Rating
         }
     }
 
+    /**
+     * Updating stars status on mouse on mouseover event
+     * @param {event} event - Mouse event 
+     */
     updateStars(event)
     {
         const isStar = event.target.classList.contains('rating_star');
