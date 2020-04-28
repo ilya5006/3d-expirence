@@ -23,7 +23,8 @@ class Rating
         if (isChanging)
         {
             this.ratingWrapper.addEventListener('mouseover', this.updateStars.bind(this));
-            this.ratingWrapper.addEventListener('click', (event) => 
+            this.ratingWrapper.addEventListener('mouseout', this.setValue.bind(this, value))
+            this.ratingWrapper.addEventListener('click', (event) =>
             { 
                 this.setValue(event.target.dataset.starnumber);
             });

@@ -20,10 +20,11 @@
 
     <!-- SCRIPTS -->
     <script src="/view/js/classes/Rating.js" defer></script>
-    <script src="/view/js/figure.js" defer></script>
     
     <script src="/view/js/b64toBlob.js" defer></script>
     <script src="/view/js/header.js" defer></script>
+    
+    <script src="/view/js/figure.js" defer></script>
 
     <title>3D-модель</title>
 </head>
@@ -32,6 +33,7 @@
 
     <div id="main_content_wrapper">
         <div id="figure_info">
+            <!-- DYNAMIC GENERATION IN JAVASCRIPT -->
             <div id="figure_image_rating_author">
                 <div id="figure_image"></div>
 
@@ -58,60 +60,9 @@
 
         <div id="reviews">
             <p>Последние отзывы</p>
+
+            <!-- DYNAMIC GENERATION IN JAVASCRIPT -->
             
-            <div class="review">
-                <div class="review_user_info">
-                    <a href="" class="user_avatar"></a>
-                    <div class="user_name_date_rating">
-                        <p><a href=""><span class="user_name">kEIz1337</span></a> | <span class="user_date">25.02.2019</span></p>
-                        <div id="user_rating">
-                            <div class="rating_star gold_rating_star"></div>
-                            <div class="rating_star gold_rating_star"></div>
-                            <div class="rating_star gold_rating_star"></div>
-                            <div class="rating_star gray_rating_star"></div>
-                            <div class="rating_star gray_rating_star"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <p class="review_text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea corrupti non suscipit perferendis dignissimos accusamus voluptas ipsum consequuntur illo ipsa.</p>
-            </div>
-
-            <div class="review">
-                <div class="review_user_info">
-                    <a href="" class="user_avatar"></a>
-                    <div class="user_name_date_rating">
-                        <p><a href=""><span class="user_name">kEIz1337</span></a> | <span class="user_date">25.02.2019</span></p>
-                        <div id="user_rating">
-                            <div class="rating_star gold_rating_star"></div>
-                            <div class="rating_star gold_rating_star"></div>
-                            <div class="rating_star gold_rating_star"></div>
-                            <div class="rating_star gray_rating_star"></div>
-                            <div class="rating_star gray_rating_star"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <p class="review_text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea corrupti non suscipit perferendis dignissimos accusamus voluptas ipsum consequuntur illo ipsa.</p>
-            </div>
-
-            <div class="review">
-                <div class="review_user_info">
-                    <a href="" class="user_avatar"></a>
-                    <div class="user_name_date_rating">
-                        <p><a href=""><span class="user_name">kEIz1337</span></a> | <span class="user_date">25.02.2019</span></p>
-                        <div id="user_rating">
-                            <div class="rating_star gold_rating_star"></div>
-                            <div class="rating_star gold_rating_star"></div>
-                            <div class="rating_star gold_rating_star"></div>
-                            <div class="rating_star gray_rating_star"></div>
-                            <div class="rating_star gray_rating_star"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <p class="review_text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea corrupti non suscipit perferendis dignissimos accusamus voluptas ipsum consequuntur illo ipsa.</p>
-            </div>
         </div>
         
         <a id="all_reviews" href="/all-reviews.php">Все отзывы</a>
