@@ -13,8 +13,6 @@ fetch(fetchURLAllWorks)
 })
 .then((figures) =>
 {
-    console.log(figures);
-
     figures.forEach((figure) =>
     {
         const figureImage = URL.createObjectURL(b64toBlob(figure.image));

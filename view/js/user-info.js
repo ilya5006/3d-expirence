@@ -9,22 +9,23 @@ let fetchURL = '/model/php/get-user-info.php';
 
 if (idUserUserInfo) fetchURL += '?id_user=' + idUserUserInfo;
 
+const idUser = idUserUserInfo; // КОСТЫЛЬ
+
 fetch(fetchURL)
 .then((res) =>
 {
-    return res.text();
+    return res.json();
 })
 .then((userInfo) =>
 {
-    const userInfoObject = JSON.parse(userInfo);
 
-    const avatar = URL.createObjectURL(b64toBlob(userInfoObject.avatar));
+    const avatar = URL.createObjectURL(b64toBlob(userInfo.avatar));
     userAvatarImg.style.backgroundImage = `url(${avatar})`;
 
-    userNameSpan.textContent = userInfoObject.login;
+    userNameSpan.textContent = userInfo.login;
 
-    const address = userInfoObject.address ? userInfoObject.address : 'Отсутствует';
+    const address = userInfo.address ? userInfo.address : 'Отсутствует';
     userAddressSpan.textContent = address;
 
-    roleP.textContent = userInfoObject.role;
+    roleP.textContent = userInfo.role;
 });

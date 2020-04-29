@@ -65,6 +65,5 @@
     $figureInfo['file'] = base64_encode($figureInfo['file']);
 
     echo json_encode($figureInfo, JSON_UNESCAPED_UNICODE | JSON_NUMERIC_CHECK);
-
-    // TODO: НУЖНО ПЕРЕСМОТРЕТЬ БАЗУ ДАННЫХ (ТАБЛИЦУ figure_review_grade И review)
+    
 ?>
