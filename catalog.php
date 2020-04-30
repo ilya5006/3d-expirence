@@ -16,8 +16,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Ruda:wght@400;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100&display=swap" rel="stylesheet">
 
+    <script src="/view/js/classes/Rating.js" defer></script>
     <script src="/view/js/b64toBlob.js" defer></script>
     <script src="/view/js/header.js" defer></script>
+
+    <script src="/view/js/catalog.js" defer></script>
 
     <title>Каталог</title>
 </head>
@@ -76,159 +79,8 @@
 
     <div id="main_content_wrapper">
         <div id="figures">
-            <div class="figure">
-                <a href="/figure.php" class="figure_image_sepcs_wrapper">
-                    <div class="figure_image"></div>
-                
-                    <div class="figure_specs">
-                        <p>Характеристики</p>
-                        <p>Характеристики</p>
-                        <p>Характеристики</p>
-                    </div>
-                </a>
-
-                <a href="/figure.php" class="figure_name">Имя фигурки</a>
-
-                <div class="figure_rating">
-                    <div class="rating_star gold_rating_star"></div>
-                    <div class="rating_star gold_rating_star"></div>
-                    <div class="rating_star gold_rating_star"></div>
-                    <div class="rating_star gold_rating_star"></div>
-                    <div class="rating_star gold_rating_star"></div>
-                </div>
-            </div>
-
-            <div class="figure">
-                <a class="figure_image_sepcs_wrapper" href="">
-                    <div class="figure_image"></div>
-                
-                    <div class="figure_specs">
-                        <p>Характеристики</p>
-                        <p>Характеристики</p>
-                        <p>Характеристики</p>
-                    </div>
-                </a>
-
-                <a href="" class="figure_name">Имя фигурки</a>
-
-                <div class="figure_rating">
-                    <div class="rating_star gold_rating_star"></div>
-                    <div class="rating_star gold_rating_star"></div>
-                    <div class="rating_star gold_rating_star"></div>
-                    <div class="rating_star gold_rating_star"></div>
-                    <div class="rating_star gold_rating_star"></div>
-                </div>
-            </div>
-
-            <div class="figure">
-                <a class="figure_image_sepcs_wrapper" href="">
-                    <div class="figure_image"></div>
-                
-                    <div class="figure_specs">
-                        <p>Характеристики</p>
-                        <p>Характеристики</p>
-                        <p>Характеристики</p>
-                    </div>
-                </a>
-
-                <a href="" class="figure_name">Имя фигурки</a>
-
-                <div class="figure_rating">
-                    <div class="rating_star gold_rating_star"></div>
-                    <div class="rating_star gold_rating_star"></div>
-                    <div class="rating_star gold_rating_star"></div>
-                    <div class="rating_star gold_rating_star"></div>
-                    <div class="rating_star gold_rating_star"></div>
-                </div>
-            </div>
-
-            <div class="figure">
-                <a class="figure_image_sepcs_wrapper" href="">
-                    <div class="figure_image"></div>
-                
-                    <div class="figure_specs">
-                        <p>Характеристики</p>
-                        <p>Характеристики</p>
-                        <p>Характеристики</p>
-                    </div>
-                </a>
-
-                <a href="" class="figure_name">Имя фигурки</a>
-
-                <div class="figure_rating">
-                    <div class="rating_star gold_rating_star"></div>
-                    <div class="rating_star gold_rating_star"></div>
-                    <div class="rating_star gold_rating_star"></div>
-                    <div class="rating_star gold_rating_star"></div>
-                    <div class="rating_star gold_rating_star"></div>
-                </div>
-            </div>
-
-            <div class="figure">
-                <a class="figure_image_sepcs_wrapper" href="">
-                    <div class="figure_image"></div>
-                
-                    <div class="figure_specs">
-                        <p>Характеристики</p>
-                        <p>Характеристики</p>
-                        <p>Характеристики</p>
-                    </div>
-                </a>
-
-                <a href="" class="figure_name">Имя фигурки</a>
-
-                <div class="figure_rating">
-                    <div class="rating_star gold_rating_star"></div>
-                    <div class="rating_star gold_rating_star"></div>
-                    <div class="rating_star gold_rating_star"></div>
-                    <div class="rating_star gold_rating_star"></div>
-                    <div class="rating_star gold_rating_star"></div>
-                </div>
-            </div>
-
-            <div class="figure">
-                <a class="figure_image_sepcs_wrapper" href="">
-                    <div class="figure_image"></div>
-                
-                    <div class="figure_specs">
-                        <p>Характеристики</p>
-                        <p>Характеристики</p>
-                        <p>Характеристики</p>
-                    </div>
-                </a>
-
-                <a href="" class="figure_name">Имя фигурки</a>
-
-                <div class="figure_rating">
-                    <div class="rating_star gold_rating_star"></div>
-                    <div class="rating_star gold_rating_star"></div>
-                    <div class="rating_star gold_rating_star"></div>
-                    <div class="rating_star gold_rating_star"></div>
-                    <div class="rating_star gold_rating_star"></div>
-                </div>
-            </div>
-
-            <div class="figure">
-                <a class="figure_image_sepcs_wrapper" href="">
-                    <div class="figure_image"></div>
-                
-                    <div class="figure_specs">
-                        <p>Характеристики</p>
-                        <p>Характеристики</p>
-                        <p>Характеристики</p>
-                    </div>
-                </a>
-
-                <a href="" class="figure_name">Имя фигурки</a>
-
-                <div class="figure_rating">
-                    <div class="rating_star gold_rating_star"></div>
-                    <div class="rating_star gold_rating_star"></div>
-                    <div class="rating_star gold_rating_star"></div>
-                    <div class="rating_star gold_rating_star"></div>
-                    <div class="rating_star gold_rating_star"></div>
-                </div>
-            </div>
+            <!-- DYNAMIC GENERATION IN JAVASCRIPT -->
+            
         </div>
 
         <div id="pagination">
