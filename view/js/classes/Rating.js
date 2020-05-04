@@ -7,8 +7,9 @@ class Rating
      * @param {node} ratingWrapper - The DOM-element which contains the stars' div (⭐)
      * @param {number} value - Default rating value
      * @param {isChanging} bool - Is have to stars changes status on mouseover event
+     * @param {onclick} functino - Callback function, which execute onclick event
      */
-    constructor(ratingWrapper, value = 5, isChanging = false)
+    constructor(ratingWrapper, value = 5, isChanging = false, onclick = null)
     {
         this.ratingWrapper = ratingWrapper;
         this.stars = ratingWrapper.querySelectorAll('.rating_star');
@@ -27,6 +28,9 @@ class Rating
             this.ratingWrapper.addEventListener('click', (event) =>
             { 
                 this.setValue(event.target.dataset.starnumber);
+                
+                if (onclick != null)
+                    onclick();
             });
         }
     }

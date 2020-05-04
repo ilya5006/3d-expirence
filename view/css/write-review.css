@@ -1,0 +1,50 @@
+#review_fields
+{
+    margin-top: 15px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#review_fields textarea, #review_fields h2
+{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 40px;
+} 
+
+#review_fields textarea
+{
+    height: 200px;
+    width: 100%;
+
+    padding: 10px;
+    
+    font-size: 25px;
+    
+
+    border: 0px;
+
+
+    resize: vertical;
+
+    background-color: aquamarine;
+}
+
+
+#review_fields input[type="submit"]
+{
+    margin-top: 20px;
+
+    font-size: 35px;
+
+    padding: 15px;
+
+    border: 0px;
+
+    background-color: #FFBDBD;
+
+    text-transform: uppercase;
+
+    cursor: pointer;
+}

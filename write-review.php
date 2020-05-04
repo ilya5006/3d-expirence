@@ -6,27 +6,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-
-    <!-- STYLES -->
     <link rel="stylesheet" href="./view/css/main.css">
     <link rel="stylesheet" href="./view/css/header.css">
     <link rel="stylesheet" href="./view/css/rating.css">
-
     <link rel="stylesheet" href="./view/css/figure.css">
+    
+    <link rel="stylesheet" href="./view/css/write-review.css">
 
-    <!-- FONTS -->
-    <link href="https://fonts.googleapis.com/css2?family=Ruda:wght@400;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
-
-    <!-- SCRIPTS -->
-    <script src="/view/js/classes/Rating.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Ruda:wght@400;500&display=swap" rel="stylesheet">
     
     <script src="/view/js/b64toBlob.js" defer></script>
     <script src="/view/js/header.js" defer></script>
-    
-    <script src="/view/js/figure.js" defer></script>
+    <script src="/view/js/classes/Rating.js" defer></script>
 
-    <title>3D-модель</title>
+    <script src="/view/js/figure.js" defer></script>
+    <script src="/view/js/write-review.js" defer></script>
+    
+    <title>Добавление 3D-модели</title>
 </head>
 <body>
     <?php require_once './view/header.php'; ?>
@@ -58,15 +55,12 @@
             </div>
         </div>
 
-        <div id="reviews">
-            <p>Последние отзывы</p>
+        <form action="/model/php/add-review.php?id_figure=<?=(int)$_GET['id_figure']?>" method="GET" id="review_fields">
+            <h2>НАПИСАТЬ ОТЗЫВ</h2>
+            <textarea></textarea>
+            <input type="submit">
+        </form>
 
-            <!-- DYNAMIC GENERATION IN JAVASCRIPT -->
-            
-        </div>
-        
-        <a id="all_reviews" href="/all-reviews.php?id_figure=<?=(int)$_GET['id_figure']?>">Все отзывы</a>
-        <a id="write_review" href="/write-review.php?id_figure=<?=(int)$_GET['id_figure']?>">Напиать отзыв</a>
     </div>
 </body>
 </html>

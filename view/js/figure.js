@@ -1,7 +1,7 @@
 const figureRatingDiv = document.querySelector('#figure_rating');
 const reviewsDiv = document.querySelector('#reviews'); 
 
-const idFigure = parseInt(window.location.href.split('?id_figure=')[1]);
+let idFigure = parseInt(window.location.href.split('?id_figure=')[1]);
 
 fetch('/model/php/get-figure-info.php?id_figure=' + idFigure)
 .then((res) =>
@@ -33,8 +33,10 @@ fetch('/model/php/get-figure-info.php?id_figure=' + idFigure)
     new Rating(document.querySelector('#figure_rating'), figureInfo.grade, true);
 
     // ОБРАБОТКА ОТЗЫВОВ
-    figureInfo.reviews.forEach((review) =>
+    figureInfo.reviews.forEach((review, index) =>
     {
+        if (index > 4) throw BreakException;
+
         const reviewDiv = document.createElement('div');
         reviewDiv.classList.add('review');
 
@@ -65,4 +67,5 @@ fetch('/model/php/get-figure-info.php?id_figure=' + idFigure)
     });
 
     document.querySelector('#all_reviews').href += ('?id_figure=' + idFigure);
+    document.querySelector('#write_review').href += ('?id_figure=' + idFigure);
 });

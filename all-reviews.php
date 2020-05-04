@@ -9,16 +9,20 @@
     <link rel="stylesheet" href="./view/css/main.css">
     <link rel="stylesheet" href="./view/css/header.css">
     <link rel="stylesheet" href="./view/css/pagination.css">
+    <link rel="stylesheet" href="./view/css/rating.css">
 
     <link rel="stylesheet" href="./view/css/figure.css">
-    <link rel="stylesheet" href="./view/css/all_reviews.css">
+    <link rel="stylesheet" href="./view/css/all-reviews.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Ruda:wght@400;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
 
     <script src="/view/js/b64toBlob.js" defer></script>
     <script src="/view/js/header.js" defer></script>
+    <script src="/view/js/classes/Rating.js" defer></script>
     
+    <script src="/view/js/all-reviews.js" defer></script>
+
     <title>3D-модель</title>
 </head>
 <body>

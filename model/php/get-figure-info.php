@@ -30,8 +30,7 @@
         WHERE `figure_review_grade`.`id_figure` = $idFigure
         AND `figure_review_grade`.`id_figure` = `review`.`id_figure`
         AND `figure_review_grade`.`id_review` = `review`.`id_review`
-        AND `review`.`id_user` = `user`.`id_user`
-        LIMIT 5"
+        AND `review`.`id_user` = `user`.`id_user`"
     );
 
     $figureIdUser = $db->query(
