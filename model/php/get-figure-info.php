@@ -31,7 +31,8 @@
         WHERE `figure_review_grade_user`.`id_figure` = $idFigure
         AND `figure_review_grade_user`.`id_figure` = `review`.`id_figure`
         AND `figure_review_grade_user`.`id_review` = `review`.`id_review`
-        AND `figure_review_grade_user`.`id_user` = `user`.`id_user`"
+        AND `figure_review_grade_user`.`id_user` = `user`.`id_user`
+        ORDER BY `review`.`date` DESC"
     );
 
     $figureGrades = $db->query(
