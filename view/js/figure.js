@@ -30,7 +30,39 @@ fetch('/model/php/get-figure-info.php?id_figure=' + idFigure)
     `;
 
     // РЕЙТИНГ ФИГУРКИ
-    new Rating(document.querySelector('#figure_rating'), figureInfo.grade, true);
+    new Rating(
+        document.querySelector('#figure_rating'),
+        figureInfo.grade,
+        true,
+        (event) =>
+        {
+            const grade = event.target.dataset.starnumber;
+
+            fetch(`/model/php/set-figure-grade.php?grade=${grade}&id_figure=${idFigure}`)
+            .then((res) =>
+            {
+                return res.text();
+            })
+            .then((res) =>
+            {
+                // console.log(isSetGrade);
+                let message;
+
+                switch(res)
+                {
+                    case '0':
+                        message = 'Вы не авторизированы!';
+                        break;
+                    case '1':
+                        message = 'Спасибо за отзыв!';
+                        break;
+                }
+
+                new Messanger(message).showMessage();
+            });
+
+        }
+    );
 
     // ОБРАБОТКА ОТЗЫВОВ
     figureInfo.reviews.forEach((review, index) =>

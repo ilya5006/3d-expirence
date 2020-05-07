@@ -8,6 +8,8 @@
     
 
     <!-- STYLES -->
+    <link rel="stylesheet" href="./view/css/messanger.css">
+
     <link rel="stylesheet" href="./view/css/main.css">
     <link rel="stylesheet" href="./view/css/header.css">
     <link rel="stylesheet" href="./view/css/rating.css">
@@ -19,6 +21,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
 
     <!-- SCRIPTS -->
+    <script src="/view/js/classes/Messanger.js" defer></script>
     <script src="/view/js/classes/Rating.js" defer></script>
     
     <script src="/view/js/b64toBlob.js" defer></script>
