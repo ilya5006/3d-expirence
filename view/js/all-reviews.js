@@ -31,3 +31,13 @@ fetch(`/model/php/get-figure-info.php?id_figure=${idFigure}`)
     // РЕЙТИНГ ФИГУРКИ
     new Rating(document.querySelector('#figure_rating'), figureInfo.grade, true);
 });
+
+fetch(`/model/php/get-figure-reviews.php?id_figure=${idFigure}`)
+.then((res) =>
+{
+    return res.json();
+})
+.then((reviews) =>
+{
+    console.log(reviews);
+});
