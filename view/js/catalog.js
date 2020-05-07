@@ -7,11 +7,9 @@ fetch('/model/php/get-figures-by-category.php?id_category=' + idCategory)
 {
     return res.json();
 })
-.then((imageInfo) =>
+.then((figures) =>
 {
-    console.log(imageInfo);
-
-    imageInfo.forEach((figure) =>
+    figures.forEach((figure) =>
     {
         const figureDiv = document.createElement('div');
         figureDiv.classList.add('figure');
@@ -48,7 +46,7 @@ fetch('/model/php/get-figures-by-category.php?id_category=' + idCategory)
         );
 
         figuresDiv.insertAdjacentElement('beforeEnd', figureDiv);
-    })
+    });
 
     
 });

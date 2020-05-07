@@ -24,7 +24,7 @@
 
         $figureGrades = $db->query(
             "SELECT SUM(`grade`), COUNT(*) 
-            FROM `figure_review_grade` WHERE `id_figure` = $idFigure"
+            FROM `figure_review_grade_user` WHERE `id_figure` = $idFigure"
         );
 
         $gradesSum = (int)$figureGrades['SUM(`grade`)'];

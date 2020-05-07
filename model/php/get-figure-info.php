@@ -6,7 +6,8 @@
     $idFigure = (int)$_GET['id_figure'];
 
     $figureInfo = $db->query(
-        "SELECT `name`, 
+        "SELECT `name`,
+                `id_user`,
                 `image`, 
                 `file`, 
                 `plastic`, 
@@ -20,28 +21,22 @@
         "SELECT 
             `review`.`id_review` AS `id_review`,
             `review`.`id_figure` AS `id_figure`,
-            `figure_review_grade`.`grade` AS `grade`,
+            `figure_review_grade_user`.`grade` AS `grade`,
             `review`.`text_review` AS `text_review`,
             `review`.`date` AS `date`,
-            `user`.`id_user` as `id_user`,
+            `user`.`id_user` AS `id_user`,
             `user`.`login` AS `login`,
             `user`.`avatar` AS `avatar`
-        FROM `figure_review_grade`, `review`, `user`
-        WHERE `figure_review_grade`.`id_figure` = $idFigure
-        AND `figure_review_grade`.`id_figure` = `review`.`id_figure`
-        AND `figure_review_grade`.`id_review` = `review`.`id_review`
-        AND `review`.`id_user` = `user`.`id_user`"
+        FROM `figure_review_grade_user`, `review`, `user`
+        WHERE `figure_review_grade_user`.`id_figure` = $idFigure
+        AND `figure_review_grade_user`.`id_figure` = `review`.`id_figure`
+        AND `figure_review_grade_user`.`id_review` = `review`.`id_review`
+        AND `figure_review_grade_user`.`id_user` = `user`.`id_user`"
     );
-
-    $figureIdUser = $db->query(
-        "SELECT `id_user` 
-        FROM `figure_user` 
-        WHERE `id_figure` = $idFigure"
-    )['id_user'];
 
     $figureGrades = $db->query(
         "SELECT SUM(`grade`), COUNT(*) 
-        FROM `figure_review_grade` WHERE `id_figure` = $idFigure"
+        FROM `figure_review_grade_user` WHERE `id_figure` = $idFigure"
     );
 
     for ($i = 0; $i < count($figureReviews); $i++)
@@ -58,7 +53,6 @@
     else
         $figureInfo['grade'] = 0;
 
-    $figureInfo['id_user'] = $figureIdUser; 
     $figureInfo['reviews'] = $figureReviews;
     $figureInfo['image'] = base64_encode($figureInfo['image']); 
     $figureInfo['file'] = base64_encode($figureInfo['file']);

@@ -16,9 +16,7 @@
     $figureId = (int)$lastFigureId;
     $figureId++;
 
-    $db->queryExecute("INSERT INTO `figure` VALUES ($figureId, $categoryId, '$name', '$image', '$model', 0.000, 0, '$plastic', '$printTime', '$fillingOut')");
-
-    $db->queryExecute("INSERT INTO `figure_user` VALUES ($figureId, $idUser)");
+    $db->queryExecute("INSERT INTO `figure` VALUES ($figureId, $categoryId, $idUser, '$name', '$image', '$model', 0.000, 0, '$plastic', '$printTime', '$fillingOut')");
 
     header("Location: /all-works.php");
 ?>
