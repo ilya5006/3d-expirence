@@ -68,8 +68,8 @@
             
         </div>
         
-        <a id="all_reviews" href="/all-reviews.php?id_figure=<?=(int)$_GET['id_figure']?>">Все отзывы</a>
-        <a id="write_review" href="/write-review.php?id_figure=<?=(int)$_GET['id_figure']?>">Напиать отзыв</a>
+        <a id="all_reviews" href="/all-reviews.php">Все отзывы</a>
+        <a id="write_review" href="/write-review.php">Напиать отзыв</a>
     </div>
 </body>
 </html>

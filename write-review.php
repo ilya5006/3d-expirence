@@ -1,4 +1,11 @@
-<?php SESSION_START(); ?>
+<?php 
+    SESSION_START();
+    
+    if (empty($_SESSION['id_user']))
+    {
+        header("Location: /index.php");
+    }
+?>
 
 <!DOCTYPE html>
 <html lang="ru">
@@ -10,6 +17,7 @@
     <link rel="stylesheet" href="./view/css/header.css">
     <link rel="stylesheet" href="./view/css/rating.css">
     <link rel="stylesheet" href="./view/css/figure.css">
+    <link rel="stylesheet" href="./view/css/messanger.css">
     
     <link rel="stylesheet" href="./view/css/write-review.css">
 
@@ -18,6 +26,7 @@
     
     <script src="/view/js/b64toBlob.js" defer></script>
     <script src="/view/js/header.js" defer></script>
+    <script src="/view/js/classes/Messanger.js" defer></script>
     <script src="/view/js/classes/Rating.js" defer></script>
 
     <script src="/view/js/figure.js" defer></script>
@@ -57,7 +66,7 @@
 
         <form action="/model/php/add-review.php?id_figure=<?=(int)$_GET['id_figure']?>" method="GET" id="review_fields">
             <h2>НАПИСАТЬ ОТЗЫВ</h2>
-            <textarea></textarea>
+            <textarea name="text_review"></textarea>
             <input type="submit">
         </form>
 

@@ -45,7 +45,6 @@ fetch('/model/php/get-figure-info.php?id_figure=' + idFigure)
             })
             .then((res) =>
             {
-                // console.log(isSetGrade);
                 let message;
 
                 switch(res)
