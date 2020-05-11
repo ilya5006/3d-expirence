@@ -57,74 +57,10 @@
         <div id="reviews">
             <p>Все отзывы</p>
             
-            <div class="review">
-                <div class="review_user_info">
-                    <a href="" class="user_avatar"></a>
-                    <div class="user_name_date_rating">
-                        <p><a href=""><span class="user_name">kEIz1337</span></a> | <span class="user_date">25.02.2019</span></p>
-                        <div id="user_rating">
-                            <div class="rating_star gold_rating_star"></div>
-                            <div class="rating_star gold_rating_star"></div>
-                            <div class="rating_star gold_rating_star"></div>
-                            <div class="rating_star grey_rating_star"></div>
-                            <div class="rating_star grey_rating_star"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <p class="review_text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea corrupti non suscipit perferendis dignissimos accusamus voluptas ipsum consequuntur illo ipsa.</p>
-            </div>
-
-            <div class="review">
-                <div class="review_user_info">
-                    <a href="" class="user_avatar"></a>
-                    <div class="user_name_date_rating">
-                        <p><a href=""><span class="user_name">kEIz1337</span></a> | <span class="user_date">25.02.2019</span></p>
-                        <div id="user_rating">
-                            <div class="rating_star gold_rating_star"></div>
-                            <div class="rating_star gold_rating_star"></div>
-                            <div class="rating_star gold_rating_star"></div>
-                            <div class="rating_star grey_rating_star"></div>
-                            <div class="rating_star grey_rating_star"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <p class="review_text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea corrupti non suscipit perferendis dignissimos accusamus voluptas ipsum consequuntur illo ipsa.</p>
-            </div>
-
-            <div class="review">
-                <div class="review_user_info">
-                    <a href="" class="user_avatar"></a>
-                    <div class="user_name_date_rating">
-                        <p><a href=""><span class="user_name">kEIz1337</span></a> | <span class="user_date">25.02.2019</span></p>
-                        <div id="user_rating">
-                            <div class="rating_star gold_rating_star"></div>
-                            <div class="rating_star gold_rating_star"></div>
-                            <div class="rating_star gold_rating_star"></div>
-                            <div class="rating_star grey_rating_star"></div>
-                            <div class="rating_star grey_rating_star"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <p class="review_text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea corrupti non suscipit perferendis dignissimos accusamus voluptas ipsum consequuntur illo ipsa.</p>
-            </div>
+            <!-- DYNAMIC GENERATION IN JAVASCRIPT -->
         </div>
         
-        <div id="pagination">
-            <button>&lt;</button>
-            <button>1</button>
-            <p class="pagination_three_dots">...</p>
-            <button>4</button>
-            <button>5</button>
-            <button id="current_page">6</button>
-            <button>7</button>
-            <button>8</button>
-            <p class="pagination_three_dots">...</p>
-            <button>N</button>
-            <button>&gt;</button>
-        </div>
+        <?php require_once './view/pagination.php'; ?>
     </div>
 </body>
 </html>
