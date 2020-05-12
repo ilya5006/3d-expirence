@@ -29,6 +29,7 @@
     
     <!-- SCRIPTS -->
     <script src="/view/js/b64toBlob.js" defer></script>
+    <script src="/view/js/classes/Rating.js" defer></script>
     <script src="/view/js/header.js" defer></script>
 
     <script src="/view/js/user-info.js" defer></script>
@@ -80,7 +81,7 @@
             <h2>Избранные работы</h2>
 
             <div id="works">
-                <div class="user_work">
+                <!-- <div class="user_work">
                    <a href="" class="user_work_image"></a>
 
                    <a href="/figure.php" class="user_work_name">Имя фигурки</a>
@@ -106,7 +107,7 @@
                         <div class="rating_star gray_rating_star"></div>
                         <div class="rating_star gray_rating_star"></div>
                     </div>
-                </div>
+                </div> -->
             </div>
 
         </div>
