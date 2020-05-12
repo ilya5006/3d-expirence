@@ -25,6 +25,6 @@ sendReviewButton.addEventListener('click', (event) =>
                 window.location.href = `/model/php/add-review.php?id_figure=${idFigure}&text_review=${textReview}`;
                 break;
         }
-    })
+    });
 
 });
